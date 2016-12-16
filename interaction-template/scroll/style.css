@@ -1,0 +1,50 @@
+html,body,h1,h2,h3,h4,p,div,a,ul,li{
+	margin:0;
+	padding:0;
+}
+h1,h2{
+	font-weight:bold;
+	margin:0 0 10px;
+}
+h2{ font-size:1.5em;}
+p{ font-size:1.2em;}
+
+
+
+/* Layout */
+html,body{
+	height:100%;
+	background:rgb(255,252,248);
+	font-family:'Roboto Condensed',sans-serif;
+}
+body .viz-container{
+	width:100%;
+	height:100%;
+	overflow:hidden;
+	position:fixed;
+	z-index:0;
+}
+.viz-container .canvas{
+	width:100%;
+	height:100%;
+	overflow:hidden;
+	background:red;
+	z-index:1;
+}
+
+/* scroll-related */
+.animation-timeline{
+	height:100%;
+	position:relative;
+}
+	.animation-timeline .scene{
+		height:100%;
+		width:100%;
+	}
+		.scene .scene-commentary{
+			width:300px;
+			z-index:9999;
+			padding: 20px 15px;
+			color:white;
+		}
+

@@ -1,0 +1,45 @@
+<!doctype HTML>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    	<link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
+    	<link href="style.css" rel="stylesheet"/>
+	</head>
+	<body>
+		<div class="viz-container">
+			<div class="canvas" id="plot"></div>
+		</div><!--this element will stay fixed-->
+
+		<div class="animation-timeline"><!--this element will scroll, triggering scroll-based animation-->
+			<section class="scene" id="scene-1"></section>
+			<section class="scene" id="scene-2">
+				<div class="scene-commentary">
+					<h3>Some optional text here</h3>
+					<p>Background of visualization will turn green when the scene is triggered</p>
+					<p>Opportunity to explain what people are seeing</p>
+				</div>
+			</section>
+			<section class="scene" id="scene-3">
+				<div class="scene-commentary">
+					<h3>More text here</h3>
+					<p>Background of visualization will turn blue when the scene is triggered</p>
+				</div>
+			</section>
+			<section class="scene scene-continuous" id="scene-4">
+				<div class="scene-commentary">
+					<h3>This particular scene changes the visualization on a continuous basis, based on current scroll position</h3>
+					<p>Ball will roll across the page.</p>
+				</div>
+			</section>
+			<section class="scene"></section><!--just a padder-->
+		</div>
+	</body>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+	<script src="lib/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js"></script>
+	<script src="script.js"></script>
+</html>

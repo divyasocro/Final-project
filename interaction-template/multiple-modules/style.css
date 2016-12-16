@@ -1,0 +1,46 @@
+html,body,h1,h2,h3,h4,p,div,a,ul,li{
+	margin:0;
+	padding:0;
+}
+h1,h2{
+	font-weight:bold;
+	margin:0 0 10px;
+}
+h2{ font-size:1.5em;}
+p{ font-size:1.2em;}
+
+
+
+/* Layout */
+html,body{
+	width:100%;
+	font-family:'Roboto Condensed',sans-serif;
+}
+body .viz-container{
+	width:100%;
+}
+	.viz-container .canvas{
+		width:100%;
+		height:600px;
+	}
+	.viz-container #plot-1{background:rgb(250,250,250);}
+	.viz-container #plot-2{background:rgb(240,240,240);}
+
+
+/* svg */
+.canvas .state{
+	stroke:rgb(250,250,250);
+	stroke-width:1px;
+}
+.canvas .state-line{
+	stroke:rgb(50,50,50);
+	stroke-width:2px;
+	fill:none;
+}
+.canvas .axis .domain{
+	display:none;
+}
+.canvas .axis line{
+	stroke:rgb(180,180,180);
+	stroke-width:1px;
+}
